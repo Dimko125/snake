@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<!--Dimasik is your God-->
+
+<html>
+	
+	<head>
+		<script src="delayControl.js"></script>
+		
+		<script src="basicStructs.js"></script>
+		<script src="functions.js"></script>
+		<script src="structs.js"></script>
+		<!--<script src="sockets.js"></script>-->
+		<script src="events.js"></script>
+		<script src="main.js"></script>
+		
+		
+	</head>
+	
+	<body onload="Init(); InitDelayControl();">
+		
+		<div style="absolute">
+			
+			<button onclick="IncreaseDelay();">+</button>
+			<input size="5" id="updDelayTextFld" onkeypress="if(event.keyCode == 13) SetDelay();"></input>
+			<button onclick="DecreaseDelay();">-</button>
+			
+			<div >
+				<button onclick="StopUpd();">stop</button>
+				<button onclick="PlayUpd();">play</button>
+			</div>
+		</div>
+		
+		<canvas id="drawField" style="position: absolute;"></canvas>
+		
+	</body>
+	
+</html>
